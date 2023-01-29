@@ -299,7 +299,7 @@ timeout 2m bash -c 'while systemctl list-units -t mount tmp-meow* | grep -q tmp-
 # test for issue #19983 and #23552.
 test_dependencies
 
-# test that handling of mount start jobs is delayed when /proc/self/mouninfo monitor is rate limited
+# test that handling of mount start jobs is delayed when /proc/self/mountinfo monitor is rate limited
 test_issue_20329
 
 # test for reexecuting with background mount job
