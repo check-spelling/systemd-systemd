@@ -741,7 +741,7 @@ Features:
 
 * add a clear concept how the initrd can make up credentials on their own to
   pass to the system when transitioning into the host OS. usecase: things like
-  cloud-init/ignitation and similar can parameterize the host with data they
+  cloud-init/ignition and similar can parameterize the host with data they
   acquire.
 
 * sd-event: compat wd reuse in inotify code: keep a set of removed watch
