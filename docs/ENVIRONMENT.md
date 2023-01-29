@@ -87,7 +87,7 @@ All tools:
 
 * `$SYSTEMD_UTF8=` — takes a boolean value, and overrides whether to generate
   non-ASCII special glyphs at various places (i.e. "→" instead of
-  "->"). Usually this is deterined automatically, based on $LC_CTYPE, but in
+  "->"). Usually this is determined automatically, based on $LC_CTYPE, but in
   scenarios where locale definitions are not installed it might make sense to
   override this check explicitly.
 
