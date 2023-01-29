@@ -542,7 +542,7 @@
  *	%NL80211_CMD_STOP_SCHED_SCAN command is received or when the interface
  *	is brought down while a scheduled scan was running.
  *
- * @NL80211_CMD_GET_SURVEY: get survey resuls, e.g. channel occupation
+ * @NL80211_CMD_GET_SURVEY: get survey results, e.g. channel occupation
  *      or noise level
  * @NL80211_CMD_NEW_SURVEY_RESULTS: survey data notification (as a reply to
  *	NL80211_CMD_GET_SURVEY and on the "scan" multicast group)
