@@ -480,7 +480,7 @@ Features:
 * systemd-measure: allow operating with PEM certificates in addition to PEM
   public keys when signing PCR values. SecureBoot and our Verity signatures
   operate with certificates already, hence I guess we should also just deal for
-  convencience with certificates for the PCR stuff too.
+  convenience with certificates for the PCR stuff too.
 
 * systemd-measure: add --pcrpkey-auto as an alternative to --pcrpkey=, where it
   would just use the same public key specified with --public-key= (or the one
