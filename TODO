@@ -1144,7 +1144,7 @@ Features:
 
 * introduce a new group to own TPM devices
 
-* cyptsetup: add option for automatically removing empty password slot on boot
+* cryptsetup: add option for automatically removing empty password slot on boot
 
 * cryptsetup: optionally, when run during boot-up and password is never
   entered, and we are on battery power (or so), power off machine again
