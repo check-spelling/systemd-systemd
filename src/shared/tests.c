@@ -340,7 +340,7 @@ const char *ci_environment(void) {
         if (getenv("AUTOPKGTEST_ARTIFACTS") || getenv("AUTOPKGTEST_TMP"))
                 return (ans = "autopkgtest");
 
-        FOREACH_STRING(var, "CI", "CONTINOUS_INTEGRATION") {
+        FOREACH_STRING(var, "CI", "CONTINUOUS_INTEGRATION") {
                 /* Those vars are booleans according to Semaphore and Travis docs:
                  * https://docs.travis-ci.com/user/environment-variables/#default-environment-variables
                  * https://docs.semaphoreci.com/ci-cd-environment/environment-variables/#ci
