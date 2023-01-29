@@ -2286,7 +2286,7 @@ CHANGES WITH 250:
           now also owned by the system group "sgx".
 
         * A new build-time meson option "extra-net-naming-schemes=" has been
-          added to define additional naming schemes schemes for udev's network
+          added to define additional naming schemes for udev's network
           interface naming logic. This is useful for enterprise distributions
           and similar which want to pin the schemes of certain distribution
           releases under a specific name and previously had to patch the
