@@ -1378,7 +1378,7 @@ node /org/freedesktop/systemd1 {
       <para><function>Reload()</function> may be invoked to reload all unit files.</para>
 
       <para><function>Reexecute()</function> may be invoked to reexecute the main manager process. It will
-      serialize its state, reexecute, and deserizalize the state again. This is useful for upgrades and is a
+      serialize its state, reexecute, and deserialize the state again. This is useful for upgrades and is a
       more comprehensive version of <function>Reload()</function>.</para>
 
       <para><function>Exit()</function> may be invoked to ask the manager to exit. This is not available for
