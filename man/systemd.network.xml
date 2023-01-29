@@ -3852,7 +3852,7 @@ Token=prefixstable:2002:da8:1::</programlisting></para>
       <varlistentry>
         <term><varname>OverheadBytes=</varname></term>
         <listitem>
-          <para>Specifies that bytes to be addeded to the size of each packet. Bytes may be negative.
+          <para>Specifies that bytes to be added to the size of each packet. Bytes may be negative.
           Takes an integer in the range -64…256. Defaults to unset and kernel's default is used.
           </para>
         </listitem>
