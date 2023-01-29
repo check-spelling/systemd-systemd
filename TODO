@@ -1123,7 +1123,7 @@ Features:
 
 * credentials system:
   - acquire from EFI variable?
-  - acquire via via ask-password?
+  - acquire creds via ask-password?
   - acquire creds via keyring?
   - pass creds via keyring?
   - pass creds via memfd?
