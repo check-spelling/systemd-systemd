@@ -722,7 +722,7 @@ Features:
   the public part of it automatically to keychain of valid code signature keys
   on subsequent boots. Then provide a tool to sign code with the key in the
   TPM2. Ensure that boot menu item is only way to enter developer mode, by
-  binding it to locality/PCRs so that that keys cannot be generated otherwise.
+  binding it to locality/PCRs so that keys cannot be generated otherwise.
 
 * services: add support for cryptographically unlocking per-service directories
   via TPM2. Specifically, for StateDirectory= (and related dirs) use fscrypt to
