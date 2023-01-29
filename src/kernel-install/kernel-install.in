@@ -241,7 +241,7 @@ done
 if [ -z "$BOOT_ROOT" ]; then
     BOOT_ROOT="/boot"
     [ "$KERNEL_INSTALL_VERBOSE" -gt 0 ] && \
-        echo "KERNEL_INSTALL_BOOT_ROOT autodection yielded no candidates, using \"$BOOT_ROOT\""
+        echo "KERNEL_INSTALL_BOOT_ROOT autodetection yielded no candidates, using \"$BOOT_ROOT\""
 fi
 
 if [ -z "$ENTRY_TOKEN" ]; then
