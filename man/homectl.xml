@@ -266,7 +266,7 @@
         matching the user in name and numeric UID/GID. Thus any groups listed here must be registered
         independently, for example with <citerefentry
         project='man-pages'><refentrytitle>groupadd</refentrytitle><manvolnum>8</manvolnum></citerefentry>.
-        Any non-existent groups are ignored. This option may be used more than once, in which case all
+        Any nonexistent groups are ignored. This option may be used more than once, in which case all
         specified group lists are combined. If the user is currently a member of a group which is not listed,
         the user will be removed from the group.</para></listitem>
       </varlistentry>

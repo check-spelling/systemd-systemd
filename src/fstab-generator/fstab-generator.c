@@ -709,7 +709,7 @@ static int parse_fstab(bool initrd) {
                          * where a symlink refers to another mount target; this works assuming the sub-mountpoint
                          * target is the final directory.
                          *
-                         * FIXME: when chase_symlinks() learns to chase non-existent paths, use this here and
+                         * FIXME: when chase_symlinks() learns to chase nonexistent paths, use this here and
                          *        drop the prefixing with /sysroot on error below.
                          */
                         k = chase_symlinks(where, initrd ? "/sysroot" : NULL,

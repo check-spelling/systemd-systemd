@@ -1828,7 +1828,7 @@ static int empty_directory(Item *i, const char *path, CreationMode creation) {
         if (r == -ENOLINK) /* Unsafe symlink: already covered by CHASE_WARN */
                 return r;
         if (r == -ENOENT) {
-                /* Option "e" operates only on existing objects. Do not print errors about non-existent files
+                /* Option "e" operates only on existing objects. Do not print errors about nonexistent files
                  * or directories */
                 log_debug_errno(r, "Skipping missing directory: %s", path);
                 return 0;

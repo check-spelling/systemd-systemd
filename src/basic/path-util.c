@@ -768,7 +768,7 @@ static int executable_is_good(const char *executable) {
         if (r < 0)
                 return r;
 
-        /* An fsck that is linked to /bin/true is a non-existent fsck */
+        /* An fsck that is linked to /bin/true is a nonexistent fsck */
 
         r = readlink_malloc(p, &d);
         if (r == -EINVAL) /* not a symlink */

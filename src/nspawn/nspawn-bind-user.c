@@ -237,7 +237,7 @@ int bind_user_prepare(
                  * even if we wanted, we couldn't override the root or nobody user records. Note we also
                  * check for name conflicts in /etc/passwd + /etc/group later on, which would usually filter
                  * out root/nobody too, hence these checks might appear redundant — but they actually are
-                 * not, as we want to support environments where /etc/passwd and /etc/group are non-existent,
+                 * not, as we want to support environments where /etc/passwd and /etc/group are nonexistent,
                  * and the user/group databases fully synthesized at runtime. Moreover, the name of the
                  * user/group name of the "nobody" account differs between distros, hence a check by numeric
                  * UID is safer. */

@@ -309,7 +309,7 @@ run dig @10.0.0.1 +short MX signed.test
 grep -qF "10 mail.signed.test." "$RUN_OUT"
 run resolvectl query --legend=no -t MX signed.test
 grep -qF "signed.test IN MX 10 mail.signed.test" "$RUN_OUT"
-# Check a non-existent domain
+# Check a nonexistent domain
 run dig +dnssec this.does.not.exist.signed.test
 grep -qF "status: NXDOMAIN" "$RUN_OUT"
 # Check a wildcard record
@@ -361,7 +361,7 @@ run dig @10.0.0.1 +short TXT onlinesign.test
 grep -qF '"hello from onlinesign"' "$RUN_OUT"
 run resolvectl query --legend=no -t TXT onlinesign.test
 grep -qF 'onlinesign.test IN TXT "hello from onlinesign"' "$RUN_OUT"
-# Check a non-existent domain
+# Check a nonexistent domain
 # Note: mod-onlinesign utilizes Minimally Covering NSEC Records, hence the
 #       different response than with "standard" DNSSEC
 run dig +dnssec this.does.not.exist.onlinesign.test

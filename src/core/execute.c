@@ -5636,7 +5636,7 @@ int exec_context_destroy_mount_ns_dir(Unit *u) {
         if (!p)
                 return -ENOMEM;
 
-        /* This is only filled transiently (see mount_in_namespace()), should be empty or even non-existent*/
+        /* This is only filled transiently (see mount_in_namespace()), should be empty or even nonexistent*/
         if (rmdir(p) < 0 && errno != ENOENT)
                 log_unit_debug_errno(u, errno, "Unable to remove propagation dir '%s', ignoring: %m", p);
 

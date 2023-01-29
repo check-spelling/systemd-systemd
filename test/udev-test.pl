@@ -686,11 +686,11 @@ KERNEL=="sda", ATTR{test_empty_file}!="?*", SYMLINK+="not-something"
 EOF
         },
         {
-                desc            => "ATTR (non-existent file)",
+                desc            => "ATTR (nonexistent file)",
                 devices => [
                         {
                                 devpath         => "/devices/pci0000:00/0000:00:1f.2/host0/target0:0:0/0:0:0:0/block/sda",
-                                exp_links       => ["non-existent", "wrong"],
+                                exp_links       => ["nonexistent", "wrong"],
                                 not_exp_links   => ["something", "empty", "not-empty",
                                                     "not-something", "something"],
                         }],
@@ -699,7 +699,7 @@ KERNEL=="sda", ATTR{nofile}=="?*", SYMLINK+="something"
 KERNEL=="sda", ATTR{nofile}!="", SYMLINK+="not-empty"
 KERNEL=="sda", ATTR{nofile}=="", SYMLINK+="empty"
 KERNEL=="sda", ATTR{nofile}!="?*", SYMLINK+="not-something"
-KERNEL=="sda", TEST!="nofile", SYMLINK+="non-existent"
+KERNEL=="sda", TEST!="nofile", SYMLINK+="nonexistent"
 KERNEL=="sda", SYMLINK+="wrong"
 EOF
         },

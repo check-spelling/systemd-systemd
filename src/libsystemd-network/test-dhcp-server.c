@@ -292,10 +292,10 @@ static void test_static_lease(void) {
         /* Remove again. */
         assert_se(sd_dhcp_server_set_static_lease(server, &(struct in_addr) { .s_addr = 0x00000000 },
                                                   (uint8_t*) &(uint32_t) { 0x01020305 }, sizeof(uint32_t)) >= 0);
-        /* Try to remove non-existent entry. */
+        /* Try to remove nonexistent entry. */
         assert_se(sd_dhcp_server_set_static_lease(server, &(struct in_addr) { .s_addr = 0x00000000 },
                                                   (uint8_t*) &(uint32_t) { 0x01020305 }, sizeof(uint32_t)) >= 0);
-        /* Try to remove non-existent entry. */
+        /* Try to remove nonexistent entry. */
         assert_se(sd_dhcp_server_set_static_lease(server, &(struct in_addr) { .s_addr = 0x00000000 },
                                                   (uint8_t*) &(uint32_t) { 0x01020306 }, sizeof(uint32_t)) >= 0);
 }

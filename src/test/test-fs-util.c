@@ -893,7 +893,7 @@ static void test_rmdir_parents_one(
                 const char *stop,
                 int expected,
                 const char *test_exist,
-                const char *test_nonexist_subdir) {
+                const char *test_nonexistent_subdir) {
 
         const char *p, *s;
 
@@ -911,7 +911,7 @@ static void test_rmdir_parents_one(
                 const char *e, *f;
 
                 e = strjoina(prefix, test_exist);
-                f = strjoina(e, test_nonexist_subdir);
+                f = strjoina(e, test_nonexistent_subdir);
 
                 assert_se(access(e, F_OK) >= 0);
                 assert_se(access(f, F_OK) < 0);

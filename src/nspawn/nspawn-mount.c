@@ -1082,7 +1082,7 @@ static int setup_volatile_yes(const char *directory, uid_t uid_shift, const char
                                        "Please work with your distribution and help them adopt the merged /usr scheme.");
         else if (!S_ISLNK(st.st_mode))
                 return log_error_errno(SYNTHETIC_ERRNO(EINVAL),
-                                       "Error starting image: if --volatile=yes is used /bin must be a symlink (for merged /usr support) or non-existent (in which case a symlink is created automatically).");
+                                       "Error starting image: if --volatile=yes is used /bin must be a symlink (for merged /usr support) or nonexistent (in which case a symlink is created automatically).");
 
         if (!mkdtemp(template))
                 return log_error_errno(errno, "Failed to create temporary directory: %m");

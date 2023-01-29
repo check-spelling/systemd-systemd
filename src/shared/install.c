@@ -376,7 +376,7 @@ void install_changes_dump(int r, const char *verb, const InstallChange *changes,
                         break;
                 case INSTALL_CHANGE_DESTINATION_NOT_PRESENT:
                         if (!quiet)
-                                log_warning("Unit %s is added as a dependency to a non-existent unit %s.",
+                                log_warning("Unit %s is added as a dependency to a nonexistent unit %s.",
                                             changes[i].source, changes[i].path);
                         break;
                 case INSTALL_CHANGE_AUXILIARY_FAILED:
@@ -2089,7 +2089,7 @@ static int install_info_apply(
         /* Do not count links to the unit file towards the "carries_install_info" count */
         if (r < 0)
                 /* If linking of the file failed, do not try to create other symlinks,
-                 * because they might would pointing to a non-existent or wrong unit. */
+                 * because they might would pointing to a nonexistent or wrong unit. */
                 return r;
 
         r = install_info_symlink_alias(scope, info, lp, config_path, force, changes, n_changes);
