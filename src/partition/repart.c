@@ -2093,7 +2093,7 @@ static int context_load_partition_table(Context *context) {
 
         case EMPTY_FORCE:
         case EMPTY_CREATE:
-                /* Always reinitiaize the disk, don't consider what there was on the disk before */
+                /* Always reinitialize the disk, don't consider what there was on the disk before */
                 from_scratch = true;
                 break;
         }
