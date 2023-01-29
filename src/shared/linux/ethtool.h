@@ -437,7 +437,7 @@ struct ethtool_modinfo {
  *	before an RX interrupt, when the packet rate is below @pkt_rate_low.
  * @tx_coalesce_usecs_low: How many usecs to delay a TX interrupt after
  *	a packet is sent, when the packet rate is below @pkt_rate_low.
- * @tx_max_coalesced_frames_low: Maximum nuumber of packets to be sent before
+ * @tx_max_coalesced_frames_low: Maximum number of packets to be sent before
  *	a TX interrupt, when the packet rate is below @pkt_rate_low.
  * @pkt_rate_high: Threshold for high packet rate (packets per second).
  * @rx_coalesce_usecs_high: How many usecs to delay an RX interrupt after
