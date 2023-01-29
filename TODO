@@ -347,7 +347,7 @@ Features:
 * bootspec: permit graceful "update" from type #2 to type #1. If both a type #1
   and a type #2 entry exist under otherwise the exact same name, then use the
   type #1 entry, and ignore the type #2 entry. This way, people can "upgrade"
-  from the UKI with all parameters baked in to a Type #1 .conf file with manual
+  from the UKI with all parameters baked into a Type #1 .conf file with manual
   parametrization, if needed. This matches our usual rule that admin config
   should win over vendor defaults.
 

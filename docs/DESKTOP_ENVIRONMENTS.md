@@ -19,7 +19,7 @@ started must be implicitly assigned to the user's current graphical session.
 
 In principle it is possible to run a single graphical session across multiple
 logind seats, and this could be a way to use more than one display per user.
-When a user logs in to a second seat, the seat resources could be assigned
+When a user logs into a second seat, the seat resources could be assigned
 to the existing session, allowing the graphical environment to present it
 is a single seat.
 Currently nothing like this is supported or even planned.
