@@ -323,7 +323,7 @@ int route_dup(const Route *src, Route **ret) {
         _cleanup_(route_freep) Route *dest = NULL;
         int r;
 
-        /* This does not copy mulipath routes. */
+        /* This does not copy multipath routes. */
 
         assert(src);
         assert(ret);
