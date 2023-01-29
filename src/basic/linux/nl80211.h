@@ -5367,7 +5367,7 @@ enum nl80211_tx_rate_setting {
  *	for the TIDs specified in %NL80211_TID_CONFIG_ATTR_TIDS.
  *	Its type is u8, using the values from &nl80211_tid_config.
  * @NL80211_TID_CONFIG_ATTR_TX_RATE_TYPE: This attribute will be useful
- *	to notfiy the driver that what type of txrate should be used
+ *	to notify the driver that what type of txrate should be used
  *	for the TIDs specified in %NL80211_TID_CONFIG_ATTR_TIDS. using
  *	the values form &nl80211_tx_rate_setting.
  * @NL80211_TID_CONFIG_ATTR_TX_RATE: Data frame TX rate mask should be applied
