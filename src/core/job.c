@@ -1015,7 +1015,7 @@ int job_finish_and_invalidate(Job *j, JobResult result, bool recursive, bool alr
          * conditions not being met is skipped, breaking our dependency semantics.
          *
          * Also, depending on if start job waits or not, the merging may or may not happen (the verify-active
-         * job may trigger after it finishes), so you get undeterministic results without this check.
+         * job may trigger after it finishes), so you get nondeterministic results without this check.
          */
         if (result == JOB_DONE && recursive &&
             IN_SET(t, JOB_START, JOB_RELOAD) &&
