@@ -268,7 +268,7 @@ static int add_unavailable_uid(Table *table, uid_t start, uid_t end) {
                         TABLE_SET_COLOR, ansi_grey(),
                         TABLE_EMPTY,
                         TABLE_EMPTY,
-                        TABLE_INT, -1); /* sort before an other entry with the same UID */
+                        TABLE_INT, -1); /* sort before another entry with the same UID */
         if (r < 0)
                 return table_log_add_error(r);
 
