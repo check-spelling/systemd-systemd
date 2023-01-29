@@ -5045,7 +5045,7 @@ static int exec_child(
                  * To be able to raise the ambient capabilities after setresuid() they have to be
                  * added to the inherited set and keep caps has to be set (done in enforce_user()).
                  * After setresuid() the ambient capabilities can be raised as they are present in
-                 * the permitted and inhertiable set. However it is possible that someone wants to
+                 * the permitted and inheritable set. However it is possible that someone wants to
                  * set ambient capabilities without changing the user, so we also set the ambient
                  * capabilities here.
                  * The requested ambient capabilities are raised in the inheritable set if the
