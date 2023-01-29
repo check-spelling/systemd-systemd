@@ -641,7 +641,7 @@ int link_request_to_set_addrgen_mode(Link *link) {
          * link goes down. Hence, we need to reset the interface. However, setting the mode by sysctl
          * does not need that. Let's use the sysctl interface when the link is already up.
          * See also issue #22424. */
-        if (mode != IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_NONE &&
+        if (mode != IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_NONE &&
             FLAGS_SET(link->flags, IFF_UP)) {
                 r = link_set_ipv6ll_addrgen_mode(link, mode);
                 if (r < 0)

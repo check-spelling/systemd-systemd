@@ -82,15 +82,15 @@ IPv6LinkLocalAddressGenMode link_get_ipv6ll_addrgen_mode(Link *link) {
         assert(link);
 
         if (!link_ipv6ll_enabled(link))
-                return IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_NONE;
+                return IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_NONE;
 
         if (link->network->ipv6ll_address_gen_mode >= 0)
                 return link->network->ipv6ll_address_gen_mode;
 
         if (in6_addr_is_set(&link->network->ipv6ll_stable_secret))
-                return IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_STABLE_PRIVACY;
+                return IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_STABLE_PRIVACY;
 
-        return IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_EUI64;
+        return IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_EUI64;
 }
 
 int ipv6ll_addrgen_mode_fill_message(sd_netlink_message *message, IPv6LinkLocalAddressGenMode mode) {
@@ -191,7 +191,7 @@ int link_set_ipv6ll_stable_secret(Link *link) {
         assert(link);
         assert(link->network);
 
-        if (link->network->ipv6ll_address_gen_mode != IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_STABLE_PRIVACY)
+        if (link->network->ipv6ll_address_gen_mode != IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_STABLE_PRIVACY)
                 return 0;
 
         if (in6_addr_is_set(&link->network->ipv6ll_stable_secret))
@@ -233,10 +233,10 @@ int link_set_ipv6ll_addrgen_mode(Link *link, IPv6LinkLocalAddressGenMode mode) {
 }
 
 static const char* const ipv6_link_local_address_gen_mode_table[_IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_MAX] = {
-        [IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_EUI64]          = "eui64",
-        [IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_NONE]           = "none",
-        [IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_STABLE_PRIVACY] = "stable-privacy",
-        [IPV6_LINK_LOCAL_ADDRESSS_GEN_MODE_RANDOM]         = "random",
+        [IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_EUI64]          = "eui64",
+        [IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_NONE]           = "none",
+        [IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_STABLE_PRIVACY] = "stable-privacy",
+        [IPV6_LINK_LOCAL_ADDRESS_GEN_MODE_RANDOM]         = "random",
 };
 
 DEFINE_STRING_TABLE_LOOKUP(ipv6_link_local_address_gen_mode, IPv6LinkLocalAddressGenMode);
