@@ -681,7 +681,7 @@ static int umount_with_timeout(MountPoint *m, bool last_try) {
 
                 /* Start the mount operation here in the child Using MNT_FORCE causes some filesystems
                  * (e.g. FUSE and NFS and other network filesystems) to abort any pending requests and return
-                 * -EIO rather than blocking indefinitely. If the filesysten is "busy", this may allow
+                 * -EIO rather than blocking indefinitely. If the filesystem is "busy", this may allow
                  * processes to die, thus making the filesystem less busy so the unmount might succeed
                  * (rather than return EBUSY). */
                 r = RET_NERRNO(umount2(m->path,
