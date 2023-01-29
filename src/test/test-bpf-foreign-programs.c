@@ -26,7 +26,7 @@ struct Test {
 
 typedef struct Test Test;
 
-#define BPFFS_PATH(prog_suffix) ("/sys/fs/bpf/test-bpf-foreing-" # prog_suffix)
+#define BPFFS_PATH(prog_suffix) ("/sys/fs/bpf/test-bpf-foreign-" # prog_suffix)
 static const Test single_prog[] = {
         {
                 .option_name = "BPFProgram",
