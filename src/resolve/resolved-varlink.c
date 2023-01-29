@@ -546,7 +546,7 @@ static int vl_method_subscribe_dns_resolves(Varlink *link, JsonVariant *paramete
         if (json_variant_elements(parameters) > 0)
                 return varlink_error_invalid_parameter(link, parameters);
 
-        /* Send a ready message to the connecting client, to indicate that we are now listinening, and all
+        /* Send a ready message to the connecting client, to indicate that we are now listening, and all
          * queries issued after the point the client sees this will also be reported to the client. */
         r = varlink_notifyb(link,
                             JSON_BUILD_OBJECT(JSON_BUILD_PAIR("ready", JSON_BUILD_BOOLEAN(true))));
