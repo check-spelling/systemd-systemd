@@ -199,7 +199,7 @@ Features:
 
 * sd-boot: make boot loader spec type #1 accept http urls in "linux"
   lines. THen, do the uefi http dance to download kernels and boot them. This
-  is then useful for network boot, by embdedding a cpio with type #1 snippets
+  is then useful for network boot, by embedding a cpio with type #1 snippets
   in sd-boot, which reference remote kernels.
 
 * fix systemd-gpt-auto-generator in case a UKI is spawned from XBOOTLDR without
