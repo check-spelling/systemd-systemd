@@ -1745,7 +1745,7 @@ enum ethtool_link_mode_bit_indices {
 /*
  * DEPRECATED macros. Please migrate to
  * ETHTOOL_GLINKSETTINGS/ETHTOOL_SLINKSETTINGS API. Please do NOT
- * define any new ADERTISE_* macro for bits > 31.
+ * define any new ADVERTISED_* macro for bits > 31.
  */
 #define ADVERTISED_10baseT_Half		__ETHTOOL_LINK_MODE_LEGACY_MASK(10baseT_Half)
 #define ADVERTISED_10baseT_Full		__ETHTOOL_LINK_MODE_LEGACY_MASK(10baseT_Full)
