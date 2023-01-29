@@ -517,7 +517,7 @@ int terminal_vhangup(const char *name) {
         return terminal_vhangup_fd(fd);
 }
 
-int vt_disallocate(const char *name) {
+int vt_deallocate(const char *name) {
         const char *e;
         int r;
 

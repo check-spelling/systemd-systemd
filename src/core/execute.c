@@ -223,8 +223,8 @@ static void exec_context_tty_reset(const ExecContext *context, const ExecParamet
         if (p && p->stdin_fd >= 0)
                 (void) terminal_set_size_fd(p->stdin_fd, path, context->tty_rows, context->tty_cols);
 
-        if (context->tty_vt_disallocate && path)
-                (void) vt_disallocate(path);
+        if (context->tty_vt_deallocate && path)
+                (void) vt_deallocate(path);
 }
 
 static bool is_terminal_input(ExecInput i) {
@@ -5868,7 +5868,7 @@ static bool exec_context_may_touch_tty(const ExecContext *ec) {
 
         return ec->tty_reset ||
                 ec->tty_vhangup ||
-                ec->tty_vt_disallocate ||
+                ec->tty_vt_deallocate ||
                 is_terminal_input(ec->std_input) ||
                 is_terminal_output(ec->std_output) ||
                 is_terminal_output(ec->std_error);
@@ -6121,7 +6121,7 @@ void exec_context_dump(const ExecContext *c, FILE* f, const char *prefix) {
                         prefix, c->tty_path,
                         prefix, yes_no(c->tty_reset),
                         prefix, yes_no(c->tty_vhangup),
-                        prefix, yes_no(c->tty_vt_disallocate),
+                        prefix, yes_no(c->tty_vt_deallocate),
                         prefix, c->tty_rows,
                         prefix, c->tty_cols);
 

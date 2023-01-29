@@ -1231,7 +1231,7 @@ const sd_bus_vtable bus_exec_vtable[] = {
         SD_BUS_PROPERTY("TTYPath", "s", NULL, offsetof(ExecContext, tty_path), SD_BUS_VTABLE_PROPERTY_CONST),
         SD_BUS_PROPERTY("TTYReset", "b", bus_property_get_bool, offsetof(ExecContext, tty_reset), SD_BUS_VTABLE_PROPERTY_CONST),
         SD_BUS_PROPERTY("TTYVHangup", "b", bus_property_get_bool, offsetof(ExecContext, tty_vhangup), SD_BUS_VTABLE_PROPERTY_CONST),
-        SD_BUS_PROPERTY("TTYVTDisallocate", "b", bus_property_get_bool, offsetof(ExecContext, tty_vt_disallocate), SD_BUS_VTABLE_PROPERTY_CONST),
+        SD_BUS_PROPERTY("TTYVTDisallocate", "b", bus_property_get_bool, offsetof(ExecContext, tty_vt_deallocate), SD_BUS_VTABLE_PROPERTY_CONST),
         SD_BUS_PROPERTY("TTYRows", "q", bus_property_get_unsigned, offsetof(ExecContext, tty_rows), SD_BUS_VTABLE_PROPERTY_CONST),
         SD_BUS_PROPERTY("TTYColumns", "q", bus_property_get_unsigned, offsetof(ExecContext, tty_cols), SD_BUS_VTABLE_PROPERTY_CONST),
         SD_BUS_PROPERTY("SyslogPriority", "i", bus_property_get_int, offsetof(ExecContext, syslog_priority), SD_BUS_VTABLE_PROPERTY_CONST),
@@ -1918,7 +1918,7 @@ int bus_exec_context_set_transient_property(
                 return bus_set_transient_bool(u, name, &c->tty_reset, message, flags, error);
 
         if (streq(name, "TTYVTDisallocate"))
-                return bus_set_transient_bool(u, name, &c->tty_vt_disallocate, message, flags, error);
+                return bus_set_transient_bool(u, name, &c->tty_vt_deallocate, message, flags, error);
 
         if (streq(name, "TTYRows"))
                 return bus_set_transient_unsigned(u, name, &c->tty_rows, message, flags, error);

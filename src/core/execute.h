@@ -233,7 +233,7 @@ struct ExecContext {
 
         bool tty_reset;
         bool tty_vhangup;
-        bool tty_vt_disallocate;
+        bool tty_vt_deallocate;
 
         unsigned tty_rows;
         unsigned tty_cols;

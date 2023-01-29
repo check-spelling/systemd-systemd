@@ -131,7 +131,7 @@ int read_one_char(FILE *f, char *ret, usec_t timeout, bool *need_nl);
 int ask_char(char *ret, const char *replies, const char *text, ...) _printf_(3, 4);
 int ask_string(char **ret, const char *text, ...) _printf_(2, 3);
 
-int vt_disallocate(const char *name);
+int vt_deallocate(const char *name);
 
 int resolve_dev_console(char **ret);
 int get_kernel_consoles(char ***ret);
