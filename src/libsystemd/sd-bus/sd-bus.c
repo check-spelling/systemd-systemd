@@ -1880,7 +1880,7 @@ static int next_cookie(sd_bus *b) {
         new_cookie = cookie_inc(b->cookie);
 
         /* Small optimization: don't bother with checking for cookie reuse until we overran cookiespace at
-         * least once, but then do it thorougly. */
+         * least once, but then do it thoroughly. */
         if (FLAGS_SET(new_cookie, COOKIE_CYCLED)) {
                 uint32_t i;
 
