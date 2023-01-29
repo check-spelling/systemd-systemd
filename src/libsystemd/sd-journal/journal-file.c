@@ -2303,7 +2303,7 @@ int journal_file_append_entry(
                                                ts->realtime);
                 if (!VALID_MONOTONIC(ts->monotonic))
                         return log_debug_errno(SYNTHETIC_ERRNO(EBADMSG),
-                                               "Invalid monotomic timestamp %" PRIu64 ", refusing entry.",
+                                               "Invalid monotonic timestamp %" PRIu64 ", refusing entry.",
                                                ts->monotonic);
         } else {
                 dual_timestamp_get(&_ts);
