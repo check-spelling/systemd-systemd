@@ -28,7 +28,7 @@ union sockaddr_union {
         /* The libc provided version that allocates "enough room" for every protocol */
         struct sockaddr_storage storage;
 
-        /* Protoctol-specific implementations */
+        /* Protocol-specific implementations */
         struct sockaddr_in in;
         struct sockaddr_in6 in6;
         struct sockaddr_un un;
