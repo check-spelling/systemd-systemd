@@ -60,7 +60,7 @@ int switch_root(const char *new_root,
                 (void) mkdir_p_label(resolved_old_root_after, 0755);
 
         /* Work-around for kernel design: the kernel refuses MS_MOVE if any file systems are mounted MS_SHARED. Hence
-         * remount them MS_PRIVATE here as a work-around.
+         * remount them MS_PRIVATE here as a workaround.
          *
          * https://bugzilla.redhat.com/show_bug.cgi?id=847418 */
         if (mount(NULL, "/", NULL, MS_REC|MS_PRIVATE, NULL) < 0)

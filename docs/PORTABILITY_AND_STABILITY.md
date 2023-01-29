@@ -59,7 +59,7 @@ Many of these interfaces are already being used by applications and 3rd party co
 
 **Portability to Architectures:** It is important to us that systemd is portable to little endian as well as big endian systems. We will make sure to provide portability with all important architectures and hardware Linux runs on and are happy to accept patches for this.
 
-**Portability to Distributions:** It is important to us that systemd is portable to all Linux distributions. However, the goal is to unify many of the needless differences between the distributions, and hence will not accept patches for certain distribution-specific work-arounds. Compatibility with the distribution's legacy should be maintained in the distribution's packaging, and not in the systemd source tree.
+**Portability to Distributions:** It is important to us that systemd is portable to all Linux distributions. However, the goal is to unify many of the needless differences between the distributions, and hence will not accept patches for certain distribution-specific workarounds. Compatibility with the distribution's legacy should be maintained in the distribution's packaging, and not in the systemd source tree.
 
 **Compatibility with Specific Versions of Other packages:** We generally avoid adding compatibility kludges to systemd that work around bugs in certain versions of other software systemd interfaces with. We strongly encourage fixing bugs where they are, and if that's not systemd we rather not try to fix it there. (There are very few exceptions to this rule possible, and you need an exceptionally strong case for it).
 

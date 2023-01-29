@@ -300,7 +300,7 @@ static int verify_fsroot_dir(
                  * /boot/ being an ext4 partition and /boot/efi/ being the VFAT ESP. The latter is mounted
                  * inaccessible for regular users via the dmask= mount option. In that case as unprivileged
                  * user we can stat() /boot/efi/, and we can stat()/enumerate /boot/. But we cannot look into
-                 * /boot/efi/, and in particular not use /boot/efi/../ – hence this work-around.) */
+                 * /boot/efi/, and in particular not use /boot/efi/../ – hence this workaround.) */
 
                 if (path_equal(path, "/"))
                         goto success;

@@ -42,7 +42,7 @@
 #define RND_GEN_X 0x03
 
 #pragma GCC diagnostic ignored "-Wpointer-arith"
-/* TODO: remove void* arithmetic and this work-around */
+/* TODO: remove void* arithmetic and this workaround */
 
 /******************************************************************************/
 

@@ -218,7 +218,7 @@ static int loop_configure_fallback(int fd, const struct loop_config *c) {
          *
          *     https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=5db470e229e22b7eda6e23b5566e532c96fb5bc3
          *
-         * We'll run the work-around here in the legacy LOOP_SET_STATUS64 codepath. In the LOOP_CONFIGURE
+         * We'll run the workaround here in the legacy LOOP_SET_STATUS64 codepath. In the LOOP_CONFIGURE
          * codepath above it should not be necessary. */
         if (c->info.lo_offset != 0 || c->info.lo_sizelimit != 0)
                 if (ioctl(fd, BLKFLSBUF, 0) < 0)

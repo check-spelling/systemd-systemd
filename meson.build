@@ -4140,7 +4140,7 @@ exe = executable(
         include_directories : includes,
         link_with : [install_libsystemd_static],
         dependencies : [threads], # threads is already included in dependencies on the library,
-                                  # but does not seem to get propagated. Add here as a work-around.
+                                  # but does not seem to get propagated. Add here as a workaround.
         build_by_default : want_tests != 'false' and static_libsystemd_pic,
         install : install_tests and static_libsystemd_pic,
         install_dir : testsdir)
