@@ -7,7 +7,7 @@
 
 /* This TPM PCR is where we extend the sd-stub "payloads" into, before using them. i.e. the kernel ELF image,
  * embedded initrd, and so on. In contrast to PCR 4 (which also contains this data, given the whole
- * surrounding PE image is measured into it) this should be reasonably pre-calculatable, because it *only*
+ * surrounding PE image is measured into it) this should be reasonably pre-calculable, because it *only*
  * consists of static data from the kernel PE image. */
 #define TPM_PCR_INDEX_KERNEL_IMAGE 11U
 
