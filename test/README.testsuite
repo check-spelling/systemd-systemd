@@ -94,7 +94,7 @@ NSPAWN_TIMEOUT=infinity
     Set a timeout for tests under systemd-nspawn (defaults to 1800 sec)
 
 INTERACTIVE_DEBUG=1
-    Configure the machine to be more *user-friendly* for interactive debuggung
+    Configure the machine to be more *user-friendly* for interactive debugging
     (e.g. by setting a usable default terminal, suppressing the shutdown after
     the test, etc.)
 
