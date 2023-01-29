@@ -802,7 +802,7 @@ static int client_message_init(
            any messages to the client on the client's subnet.
 
            Note: some interfaces needs this to be enabled, but some networks
-           needs this to be disabled as broadcasts are filteretd, so this
+           needs this to be disabled as broadcasts are filtered, so this
            needs to be configurable */
         if (client->request_broadcast || client->arp_type != ARPHRD_ETHER)
                 packet->dhcp.flags = htobe16(0x8000);
