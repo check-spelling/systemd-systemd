@@ -14624,7 +14624,7 @@ CHANGES WITH 189:
           udev_device_new_from_device_id() call.
 
         * The logic for file system namespace (ReadOnlyDirectory=,
-          ReadWriteDirectoy=, PrivateTmp=) has been reworked not to
+          ReadWriteDirectory=, PrivateTmp=) has been reworked not to
           require pivot_root() anymore. This means fewer temporary
           directories are created below /tmp for this feature.
 
