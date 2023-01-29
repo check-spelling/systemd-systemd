@@ -169,7 +169,7 @@ Features:
 
 * in journald: whenever we start a new journal file because the boot ID
   changed, let's generate a recognizable log record containing info about old
-  and new new ID. Then, when displaying log stream in journalctl look for these
+  and new ID. Then, when displaying log stream in journalctl look for these
   records, to be able to order them.
 
 * timesyncd: when saving/restoring clock try to take boot time into account.
