@@ -5,7 +5,7 @@
 
 int log_facility_unshifted_to_string_alloc(int i, char **s);
 int log_facility_unshifted_from_string(const char *s);
-bool log_facility_unshifted_is_valid(int faciliy);
+bool log_facility_unshifted_is_valid(int facility);
 
 int log_level_to_string_alloc(int i, char **s);
 int log_level_from_string(const char *s);
