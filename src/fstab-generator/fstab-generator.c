@@ -1088,7 +1088,7 @@ static int add_volatile_var(void) {
 static int parse_proc_cmdline_item(const char *key, const char *value, void *data) {
         int r;
 
-        /* root=, usr=, usrfstype= and roofstype= may occur more than once, the last
+        /* root=, usr=, usrfstype= and rootfstype= may occur more than once, the last
          * instance should take precedence.  In the case of multiple rootflags=
          * or usrflags= the arguments should be concatenated */
 
