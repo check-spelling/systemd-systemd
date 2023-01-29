@@ -1654,7 +1654,7 @@ static int client_set_lease_timeouts(sd_dhcp_client *client) {
         if (client->lease->t1 == 0 || client->lease->t1 >= client->lease->t2)
                 client->lease->t1 = T1_DEFAULT(client->lease->lifetime);
         /* now, if t1 >= t2, t1 *must* be T1_DEFAULT, since the previous check
-         * could not evalate to false if t1 >= t2; so setting t2 to T2_DEFAULT
+         * could not evaluate to false if t1 >= t2; so setting t2 to T2_DEFAULT
          * guarantees t1 < t2. */
         if (client->lease->t1 >= client->lease->t2)
                 client->lease->t2 = T2_DEFAULT(client->lease->lifetime);
