@@ -108,7 +108,7 @@ struct Varlink {
                           * *will* be sent.
                           *
                           * Or to say this even differently: 'state' is a high-level ("application layer"
-                          * high, if you so will) state, while 'conecting' is a low-level ("transport layer"
+                          * high, if you so will) state, while 'connecting' is a low-level ("transport layer"
                           * low, if you so will) state, and while they are not entirely unrelated and
                           * sometimes propagate effects to each other they are only asynchronously connected
                           * at most. */
