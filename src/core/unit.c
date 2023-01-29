@@ -2269,7 +2269,7 @@ static int raise_level(int log_level, bool condition_info, bool condition_notice
 static int unit_log_resources(Unit *u) {
         struct iovec iovec[1 + _CGROUP_IP_ACCOUNTING_METRIC_MAX + _CGROUP_IO_ACCOUNTING_METRIC_MAX + 4];
         bool any_traffic = false, have_ip_accounting = false, any_io = false, have_io_accounting = false;
-        _cleanup_free_ char *igress = NULL, *egress = NULL, *rr = NULL, *wr = NULL;
+        _cleanup_free_ char *ingress = NULL, *egress = NULL, *rr = NULL, *wr = NULL;
         int log_level = LOG_DEBUG; /* May be raised if resources consumed over a threshold */
         size_t n_message_parts = 0, n_iovec = 0;
         char* message_parts[1 + 2 + 2 + 1], *t;
@@ -2404,9 +2404,9 @@ static int unit_log_resources(Unit *u) {
                 /* Format the IP accounting data for inclusion in the human language message string, but only for the
                  * bytes counters (and not for the packets counters) */
                 if (m == CGROUP_IP_INGRESS_BYTES) {
-                        assert(!igress);
-                        igress = strjoin("received ", strna(FORMAT_BYTES(value)), " IP traffic");
-                        if (!igress) {
+                        assert(!ingress);
+                        ingress = strjoin("received ", strna(FORMAT_BYTES(value)), " IP traffic");
+                        if (!ingress) {
                                 r = log_oom();
                                 goto finish;
                         }
@@ -2434,8 +2434,8 @@ static int unit_log_resources(Unit *u) {
 
         if (have_ip_accounting) {
                 if (any_traffic) {
-                        if (igress)
-                                message_parts[n_message_parts++] = TAKE_PTR(igress);
+                        if (ingress)
+                                message_parts[n_message_parts++] = TAKE_PTR(ingress);
                         if (egress)
                                 message_parts[n_message_parts++] = TAKE_PTR(egress);
 
