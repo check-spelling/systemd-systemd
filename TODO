@@ -1552,7 +1552,7 @@ Features:
 
 * define gpt header bits to select volatility mode
 
-* ProtectClock= (drops CAP_SYS_TIMES, adds seecomp filters for settimeofday, adjtimex), sets DeviceAllow o /dev/rtc
+* ProtectClock= (drops CAP_SYS_TIMES, adds seccomp filters for settimeofday, adjtimex), sets DeviceAllow o /dev/rtc
 
 * ProtectTracing= (drops CAP_SYS_PTRACE, blocks ptrace syscall, makes /sys/kernel/tracing go away)
 
