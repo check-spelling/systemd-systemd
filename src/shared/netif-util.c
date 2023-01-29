@@ -184,7 +184,7 @@ int net_verify_hardware_address(
                 if (is_static &&
                     (!memeqzero(new_hw_addr->bytes, INFINIBAND_ALEN - 8) ||
                      memcmp(new_hw_addr->bytes, ib_hw_addr->bytes, INFINIBAND_ALEN - 8) != 0))
-                        log_link_warning(&link, "Only the last 8 bytes of the InifniBand MAC address can be changed, ignoring the first 12 bytes.");
+                        log_link_warning(&link, "Only the last 8 bytes of the InfiniBand MAC address can be changed, ignoring the first 12 bytes.");
 
                 if (memeqzero(new_hw_addr->bytes + INFINIBAND_ALEN - 8, 8)) {
                         if (is_static)
