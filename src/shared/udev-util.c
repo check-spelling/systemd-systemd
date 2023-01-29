@@ -342,7 +342,7 @@ int udev_rule_parse_value(char *str, char **ret_value, char **ret_endpos) {
         char *i, *j;
         bool is_escaped;
 
-        /* value must be double quotated */
+        /* value must be double quoted */
         is_escaped = str[0] == 'e';
         str += is_escaped;
         if (str[0] != '"')
