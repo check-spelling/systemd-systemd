@@ -339,7 +339,7 @@ SecureBootMode efi_get_secure_boot_mode(void) {
                 return (cache = SECURE_BOOT_UNSUPPORTED);
         }
 
-        /* We can assume false for all these if they are abscent (AuditMode and
+        /* We can assume false for all these if they are absent (AuditMode and
          * DeployedMode may not exist on older firmware). */
         int audit    = read_flag(EFI_GLOBAL_VARIABLE(AuditMode));
         int deployed = read_flag(EFI_GLOBAL_VARIABLE(DeployedMode));
