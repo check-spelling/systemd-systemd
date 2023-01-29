@@ -788,7 +788,7 @@ Unit* unit_free(Unit *u) {
         bpf_link_free(u->restrict_ifaces_ingress_bpf_link);
         bpf_link_free(u->restrict_ifaces_egress_bpf_link);
 #endif
-        fdset_free(u->initial_restric_ifaces_link_fds);
+        fdset_free(u->initial_restrict_ifaces_link_fds);
 
         condition_free_list(u->conditions);
         condition_free_list(u->asserts);

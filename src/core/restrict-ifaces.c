@@ -145,7 +145,7 @@ static int restrict_network_interfaces_install_impl(Unit *u) {
 
 int restrict_network_interfaces_install(Unit *u) {
         int r = restrict_network_interfaces_install_impl(u);
-        fdset_close(u->initial_restric_ifaces_link_fds);
+        fdset_close(u->initial_restrict_ifaces_link_fds);
         return r;
 }
 
@@ -166,13 +166,13 @@ int restrict_network_interfaces_add_initial_link_fd(Unit *u, int fd) {
 
         assert(u);
 
-        if (!u->initial_restric_ifaces_link_fds) {
-                u->initial_restric_ifaces_link_fds = fdset_new();
-                if (!u->initial_restric_ifaces_link_fds)
+        if (!u->initial_restrict_ifaces_link_fds) {
+                u->initial_restrict_ifaces_link_fds = fdset_new();
+                if (!u->initial_restrict_ifaces_link_fds)
                         return log_oom();
         }
 
-        r = fdset_put(u->initial_restric_ifaces_link_fds, fd);
+        r = fdset_put(u->initial_restrict_ifaces_link_fds, fd);
         if (r < 0)
                 return log_unit_error_errno(u, r,
                         "restrict-interfaces: Failed to put restrict-ifaces-bpf-fd %d to restored fdset: %m", fd);
