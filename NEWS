@@ -15106,7 +15106,7 @@ CHANGES WITH 183:
           packages which might result in changes of read-ahead
           patterns.
 
-        * We now temporaritly lower the kernel's read_ahead_kb variable
+        * We now temporarily lower the kernel's read_ahead_kb variable
           when collecting read-ahead data to ensure the kernel's
           built-in read-ahead does not add noise to our measurements
           of necessary blocks to pre-cache.
