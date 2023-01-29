@@ -696,7 +696,7 @@
 
         <listitem><para>Takes a symlink name as argument. If this option is used, as the last step of the
         update a symlink under the specified name is created/updated pointing to the completed update. This
-        is useful in to provide a stable name always pointing to the newest version of the resource. This is
+        is useful to provide a stable name always pointing to the newest version of the resource. This is
         only supported if the target resource <varname>Type=</varname> is selected as
         <constant>regular-file</constant>, <constant>directory</constant> or
         <constant>subvolume</constant>.</para></listitem>

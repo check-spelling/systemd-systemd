@@ -970,7 +970,7 @@ Features:
   mounted from host. maybe put this in systemd-user-sessions.service?
 
 * drop dependency on libcap, replace by direct syscalls based on
-  CapabilityQuintet we already have. (This likely allows us drop drop libcap
+  CapabilityQuintet we already have. (This likely allows us to drop libcap
   dep in the base OS image)
 
 * sysext: automatically activate sysext images dropped in via new sd-stub

@@ -52,7 +52,7 @@ static inline int negative_errno(void) {
 
 static inline int RET_NERRNO(int ret) {
 
-        /* Helper to wrap system calls in to make them return negative errno errors. This brings system call
+        /* Helper to wrap system calls to make them return negative errno errors. This brings system call
          * error handling in sync with how we usually handle errors in our own code, i.e. with immediate
          * returning of negative errno. Usage is like this:
          *
