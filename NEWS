@@ -325,7 +325,7 @@ CHANGES WITH 253 in spe:
         * When measuring data into a PCR, an authenticated hash (HMAC) is used
           on the CPU, to further protect the data before it leaves the CPU.
 
-        * systemd-gpt-auto-generator mounts the ESP and XBOOTLDR partions with
+        * systemd-gpt-auto-generator mounts the ESP and XBOOTLDR partitions with
           "noexec,nosuid,nodev".
 
         * systemd-pcrphase gained new options --machine-id and --file-system=
