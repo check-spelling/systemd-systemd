@@ -735,7 +735,7 @@ node /org/freedesktop/login1 {
       <function>ScheduleShutdown()</function> method described above.</para>
 
       <para><varname>RebootToFirmwareSetup</varname>, <varname>RebootToBootLoaderMenu</varname>, and
-      <varname>RebootToBootLoaderEntry</varname> are true when the resprective post-reboot operation was
+      <varname>RebootToBootLoaderEntry</varname> are true when the respective post-reboot operation was
       selected with <function>SetRebootToFirmwareSetup</function>,
       <function>SetRebootToBootLoaderMenu</function>, or
       <function>SetRebootToBootLoaderEntry</function>.</para>
