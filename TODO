@@ -1131,7 +1131,7 @@ Features:
   - make systemd-cryptsetup acquire pw via creds logic
   - make PAMName= acquire pw via creds logic
   - make macsec/wireguard code in networkd read key via creds logic
-  - make gatwayd/remote read key via creds logic
+  - make gatewayd/remote read key via creds logic
   - add sd_notify() command for flushing out creds not needed anymore
   - make user manager instances create and use a user-specific key (the one in
     /var/lib is root-only) and add --user switch to systemd-creds to use it
