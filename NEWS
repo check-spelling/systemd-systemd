@@ -10048,7 +10048,7 @@ CHANGES WITH 227:
           service that is activated through /dev/rfkill on each rfkill
           state change and saves the settings to disk. This way,
           systemd-rfkill is now compatible with devices that exist
-          only intermittendly, and even restores state if the previous
+          only intermittently, and even restores state if the previous
           system shutdown was abrupt rather than clean.
 
         * The journal daemon gained support for vacuuming old journal
