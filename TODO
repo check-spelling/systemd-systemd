@@ -1401,7 +1401,7 @@ Features:
 
 * add support for "portablectl attach http://foobar.com/waaa.raw (i.e. importd integration)
 
-* sync dynamic uids/gids between host+portable srvice (i.e. if DynamicUser=1 is set for a service, make sure that the
+* sync dynamic uids/gids between host+portable service (i.e. if DynamicUser=1 is set for a service, make sure that the
   selected user is resolvable in the service even if it ships its own /etc/passwd)
 
 * Fix DECIMAL_STR_MAX or DECIMAL_STR_WIDTH. One includes a trailing NUL, the
