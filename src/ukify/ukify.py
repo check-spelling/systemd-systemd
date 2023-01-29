@@ -639,7 +639,7 @@ usage: ukify [options…] linux initrd…
 
     p.add_argument('--stub',
                    type=pathlib.Path,
-                   help='path the the sd-stub file [.text,.data,… sections]')
+                   help='path the sd-stub file [.text,.data,… sections]')
 
     p.add_argument('--section',
                    dest='sections',
