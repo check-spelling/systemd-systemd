@@ -29,7 +29,7 @@ function wait_for()
 wait_for success_all
 
 # These check that EXTEND_TIMEOUT_USEC that occurs at greater than the
-# extend timeout interval but less then the stage limit (TimeoutStartSec,
+# extend timeout interval but less than the stage limit (TimeoutStartSec,
 # RuntimeMaxSec, TimeoutStopSec) still succeed.
 
 wait_for success_start
