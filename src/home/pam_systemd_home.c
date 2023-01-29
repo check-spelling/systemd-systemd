@@ -526,7 +526,7 @@ static int acquire_home(
          * the LUKS image in case the image was used in a different system where the password was
          * changed. In that case it will happen that the LUKS password and the host password are
          * different, and we handle that by collecting and passing multiple passwords in that case. Hence we
-         * treat bad passwords as a request to collect one more password and pass the new all all previously
+         * treat bad passwords as a request to collect one more password and pass all previously
          * used passwords again. */
 
         for (;;) {
