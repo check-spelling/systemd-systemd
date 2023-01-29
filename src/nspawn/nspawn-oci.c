@@ -49,7 +49,7 @@
  * should escaping be applied when joining mount options with ","?
  * devices cgroup support is bogus, "allow" and "deny" on the kernel level is about adding/removing entries, not about access
  * spec needs to say that "rwm" devices cgroup combination can't be the empty string
- * cgrouspv1 crap: kernel, kernelTCP, swappiness, disableOOMKiller, swap, devices, leafWeight
+ * cgroupsv1 crap: kernel, kernelTCP, swappiness, disableOOMKiller, swap, devices, leafWeight
  * general: it shouldn't leak lower level abstractions this obviously
  * unmanagable cgroups stuff: realtimeRuntime/realtimePeriod
  * needs to say what happense when some option is not specified, i.e. which defaults apply
