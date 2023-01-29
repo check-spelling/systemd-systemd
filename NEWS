@@ -13435,7 +13435,7 @@ CHANGES WITH 205:
           about the unit file loading.
 
         * libsystemd-journal gained a new sd_journal_open_files() call
-          for opening specific journal files. journactl also gained a
+          for opening specific journal files. journalctl also gained a
           new switch to expose this new functionality. Previously we
           only supported opening all files from a directory, or all
           files from the system, as opening individual files only is
@@ -13450,7 +13450,7 @@ CHANGES WITH 205:
           augment this with additional OBJECT_UID=, OBJECT_GID=,
           OBJECT_COMM=, OBJECT_EXE=, … fields. This is useful if
           system services want to log events about specific client
-          processes. journactl/systemctl has been updated to make use
+          processes. journalctl/systemctl has been updated to make use
           of this information if all log messages regarding a specific
           unit is requested.
 
@@ -13606,7 +13606,7 @@ CHANGES WITH 202:
           matching logic. This can be used to express more complex
           logical expressions.
 
-        * journactl can now take multiple --unit= and --user-unit=
+        * journalctl can now take multiple --unit= and --user-unit=
           switches.
 
         * The cryptsetup logic now understands the "luks.key=" kernel
