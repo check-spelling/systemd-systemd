@@ -191,7 +191,7 @@ typedef struct Fido2HmacCredential {
 } Fido2HmacCredential;
 
 typedef struct Fido2HmacSalt {
-        /* The FIDO2 Cridential ID to use */
+        /* The FIDO2 Credential ID to use */
         Fido2HmacCredential credential;
 
         /* The FIDO2 salt value */
