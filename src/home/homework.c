@@ -1903,7 +1903,7 @@ static int run(int argc, char *argv[]) {
          * ENOTTY          → operation not support on this storage
          * ESOCKTNOSUPPORT → operation not support on this file system
          * ENOKEY          → password incorrect (or not sufficient, or not supplied)
-         * EREMOTEIO       → recovery key incorrect (or not sufficeint, or not supplied — only if no passwords defined)
+         * EREMOTEIO       → recovery key incorrect (or not sufficient, or not supplied — only if no passwords defined)
          * EBADSLT         → similar, but PKCS#11 device is defined and might be able to provide password, if it was plugged in which it is not
          * ENOANO          → suitable PKCS#11/FIDO2 device found, but PIN is missing to unlock it
          * ERFKILL         → suitable PKCS#11 device found, but OK to ask for on-device interactive authentication not given

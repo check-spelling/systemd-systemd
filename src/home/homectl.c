@@ -1758,7 +1758,7 @@ static int passwd_home(int argc, char *argv[], void *userdata) {
                         } else if (sd_bus_error_has_name(&error, BUS_ERROR_BAD_PASSWORD_AND_NO_TOKEN))
 
                                 /* In the generic handler we'd ask for a password in this case, but when
-                                 * changing passwords that's not sufficeint, as we need to acquire all keys
+                                 * changing passwords that's not sufficient, as we need to acquire all keys
                                  * first. */
                                 return log_error_errno(r, "Security token not inserted, refusing.");
                         else
