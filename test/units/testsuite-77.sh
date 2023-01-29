@@ -30,9 +30,9 @@ EOF
 echo "New" > /test-77-new-file.dat
 systemd-run --wait -p OpenFile=/test-77-new-file.dat:new-file:read-only "$(dirname "$0")"/testsuite-77-run.sh
 
-assert_rc 202 systemd-run --wait -p OpenFile=/test-77-new-file.dat:new-file:read-only -p OpenFile=/test-77-mssing-file.dat:missing-file:read-only "$(dirname "$0")"/testsuite-77-run.sh
+assert_rc 202 systemd-run --wait -p OpenFile=/test-77-new-file.dat:new-file:read-only -p OpenFile=/test-77-missing-file.dat:missing-file:read-only "$(dirname "$0")"/testsuite-77-run.sh
 
-assert_rc 0 systemd-run --wait -p OpenFile=/test-77-new-file.dat:new-file:read-only -p OpenFile=/test-77-mssing-file.dat:missing-file:read-only,graceful "$(dirname "$0")"/testsuite-77-run.sh
+assert_rc 0 systemd-run --wait -p OpenFile=/test-77-new-file.dat:new-file:read-only -p OpenFile=/test-77-missing-file.dat:missing-file:read-only,graceful "$(dirname "$0")"/testsuite-77-run.sh
 
 # End
 touch /testok
