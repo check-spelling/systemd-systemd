@@ -1196,7 +1196,7 @@ static inline __u16 btrfs_qgroup_level(__u64 qgroupid)
  * either because the configuration has changed in a way that
  * makes a rescan necessary, or because the fs has been mounted
  * with a non-qgroup-aware version.
- * Turning qouta off and on again makes it inconsistent, too.
+ * Turning quota off and on again makes it inconsistent, too.
  */
 #define BTRFS_QGROUP_STATUS_FLAG_INCONSISTENT	(1ULL << 2)
 
