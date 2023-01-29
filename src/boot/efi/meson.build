@@ -206,7 +206,7 @@ efi_cflags += cc.get_supported_arguments({
 }.get(efi_arch[1], []))
 
 # We are putting the efi_cc command line together ourselves, so make sure to pull any
-# relevant compiler flags from meson/CFLAGS as povided by the user or distro.
+# relevant compiler flags from meson/CFLAGS as provided by the user or distro.
 
 if get_option('werror')
         efi_cflags += ['-Werror']
