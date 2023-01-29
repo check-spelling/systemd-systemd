@@ -23,9 +23,9 @@ typedef enum UnitDependencyAtom {
         /* Same, but don't fail, ignore it. */
         UNIT_ATOM_PULL_IN_STOP_IGNORED                = UINT64_C(1) << 4,
 
-        /* If our enters inactive state, add the other unit to the StopWhenUneeded= queue */
+        /* If our enters inactive state, add the other unit to the StopWhenUnneeded= queue */
         UNIT_ATOM_ADD_STOP_WHEN_UNNEEDED_QUEUE        = UINT64_C(1) << 5,
-        /* Pin the other unit i.e. ensure StopWhenUneeded= won't trigger for the other unit as long as we are
+        /* Pin the other unit i.e. ensure StopWhenUnneeded= won't trigger for the other unit as long as we are
          * not in inactive state */
         UNIT_ATOM_PINS_STOP_WHEN_UNNEEDED             = UINT64_C(1) << 6,
 
