@@ -578,7 +578,7 @@ static int method_lock_all_homes(sd_bus_message *message, void *userdata, sd_bus
                 waiting = true;
         }
 
-        if (waiting) /* At least one lock operation was enqeued, let's leave here without a reply: it will
+        if (waiting) /* At least one lock operation was enqueued, let's leave here without a reply: it will
                       * be sent as soon as the last of the lock operations completed. */
                 return 1;
 
@@ -614,7 +614,7 @@ static int method_deactivate_all_homes(sd_bus_message *message, void *userdata, 
                 waiting = true;
         }
 
-        if (waiting) /* At least one lock operation was enqeued, let's leave here without a reply: it will be
+        if (waiting) /* At least one lock operation was enqueued, let's leave here without a reply: it will be
                       * sent as soon as the last of the deactivation operations completed. */
                 return 1;
 
