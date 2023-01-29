@@ -4242,7 +4242,7 @@ enum nl80211_reg_type {
  * @NL80211_ATTR_REG_RULE_FLAGS: a set of flags which specify additional
  * 	considerations for a given frequency range. These are the
  * 	&enum nl80211_reg_rule_flags.
- * @NL80211_ATTR_FREQ_RANGE_START: starting frequencry for the regulatory
+ * @NL80211_ATTR_FREQ_RANGE_START: starting frequency for the regulatory
  * 	rule in KHz. This is not a center of frequency but an actual regulatory
  * 	band edge.
  * @NL80211_ATTR_FREQ_RANGE_END: ending frequency for the regulatory rule
