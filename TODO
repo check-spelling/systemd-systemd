@@ -1366,7 +1366,7 @@ Features:
 * augment CODE_FILE=, CODE_LINE= with something like CODE_BASE= or so which
   contains some identifier for the project, which allows us to include
   clickable links to source files generating these log messages. The identifier
-  could be some abberviated URL prefix or so (taking inspiration from Go
+  could be some abbreviated URL prefix or so (taking inspiration from Go
   imports). For example, for systemd we could use
   CODE_BASE=github.com/systemd/systemd/blob/98b0b1123cc or so which is
   sufficient to build a link by prefixing "http://" and suffixing the
