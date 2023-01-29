@@ -1819,7 +1819,7 @@ Features:
 
 * teach ConditionKernelCommandLine= globs or regexes (in order to match foobar={no,0,off})
 
-* Add ConditionDirectoryNotEmpty= handle non-absoute paths as a search path or add
+* Add ConditionDirectoryNotEmpty= handle non-absolute paths as a search path or add
   ConditionConfigSearchPathNotEmpty= or different syntax? See the discussion starting at
   https://github.com/systemd/systemd/pull/15109#issuecomment-607740136.
 
