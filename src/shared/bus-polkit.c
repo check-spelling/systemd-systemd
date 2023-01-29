@@ -208,7 +208,7 @@ static int async_polkit_callback(sd_bus_message *reply, void *userdata, sd_bus_e
         assert(!q->reply);
         q->reply = sd_bus_message_ref(reply);
 
-        /* Now, let's dispatch the original message a second time be re-enqueing. This will then traverse the
+        /* Now, let's dispatch the original message a second time be re-enqueuing. This will then traverse the
          * whole message processing again, and thus re-validating and re-retrieving the "userdata" field
          * again.
          *
