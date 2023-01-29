@@ -9011,9 +9011,9 @@ CHANGES WITH 231:
           defining a timer that is triggered at 4:10am, 5:10am, 6:10am and
           7:10am every day.
 
-        * The InaccessableDirectories=, ReadOnlyDirectories= and
+        * The InaccessibleDirectories=, ReadOnlyDirectories= and
           ReadWriteDirectories= unit file settings have been renamed to
-          InaccessablePaths=, ReadOnlyPaths= and ReadWritePaths= and may now be
+          InaccessiblePaths=, ReadOnlyPaths= and ReadWritePaths= and may now be
           applied to all kinds of file nodes, and not just directories, with
           the exception of symlinks. Specifically these settings may now be
           used on block and character device nodes, UNIX sockets and FIFOS as
