@@ -1674,7 +1674,7 @@ BindReadOnlyPaths=/var/lib/systemd</programlisting>
       <varlistentry>
         <term><varname>NetworkNamespacePath=</varname></term>
 
-        <listitem><para>Takes an absolute file system path refererring to a Linux network namespace
+        <listitem><para>Takes an absolute file system path referring to a Linux network namespace
         pseudo-file (i.e. a file like <filename>/proc/$PID/ns/net</filename> or a bind mount or symlink to
         one). When set the invoked processes are added to the network namespace referenced by that path. The
         path has to point to a valid namespace file at the moment the processes are forked off. If this
@@ -1724,7 +1724,7 @@ BindReadOnlyPaths=/var/lib/systemd</programlisting>
       <varlistentry>
         <term><varname>IPCNamespacePath=</varname></term>
 
-        <listitem><para>Takes an absolute file system path refererring to a Linux IPC namespace
+        <listitem><para>Takes an absolute file system path referring to a Linux IPC namespace
         pseudo-file (i.e. a file like <filename>/proc/$PID/ns/ipc</filename> or a bind mount or symlink to
         one). When set the invoked processes are added to the network namespace referenced by that path. The
         path has to point to a valid namespace file at the moment the processes are forked off. If this
