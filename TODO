@@ -1062,7 +1062,7 @@ Features:
     defined on the host, plus all images installed into /var/lib/machines/,
     /var/lib/portable/ and so on.
   - figure out what to do about system extensions (i.e. they need to imply an
-    update component, since otherwise system extenion' sysupdate.d/ files would
+    update component, since otherwise system extension' sysupdate.d/ files would
     override the host's update files.)
   - Allow invocation with a single transfer definition, i.e. with
     --definitions= pointing to a file rather than a dir.
