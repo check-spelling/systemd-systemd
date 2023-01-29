@@ -990,7 +990,7 @@ int calendar_spec_from_string(const char *p, CalendarSpec **spec) {
         } else if (STRCASE_IN_SET(p,
                                   "annually",
                                   "yearly",
-                                  "anually") /* backwards compatibility */ ) {
+                                  "annually") /* backwards compatibility */ ) {
 
                 r = const_chain(1, &c->month);
                 if (r < 0)
