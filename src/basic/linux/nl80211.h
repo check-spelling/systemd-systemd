@@ -5721,7 +5721,7 @@ enum nl80211_attr_coalesce_rule {
 
 /**
  * enum nl80211_coalesce_condition - coalesce rule conditions
- * @NL80211_COALESCE_CONDITION_MATCH: coalaesce Rx packets when patterns
+ * @NL80211_COALESCE_CONDITION_MATCH: coalesce Rx packets when patterns
  *	in a rule are matched.
  * @NL80211_COALESCE_CONDITION_NO_MATCH: coalesce Rx packets when patterns
  *	in a rule are not matched.
