@@ -52,7 +52,7 @@ components, it'd go to `src/shared/`. Shared code that is used by multiple
 components that do not link to `libsystemd-shared-<nnn>.so` may live either in
 `src/libsystemd/`, `src/basic/`, or `src/fundamental/`. Any code that is used
 only for EFI goes under `src/boot/efi/`, and `src/fundamental/` if is shared
-with non-EFI compoenents.
+with non-EFI components.
 
 To summarize:
 
