@@ -303,7 +303,7 @@ _public_ int sd_id128_randomize(sd_id128_t *ret) {
 
         /* Turn this into a valid v4 UUID, to be nice. Note that we
          * only guarantee this for newly generated UUIDs, not for
-         * pre-existing ones. */
+         * preexisting ones. */
 
         *ret = id128_make_v4_uuid(t);
         return 0;

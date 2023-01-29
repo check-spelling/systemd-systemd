@@ -179,7 +179,7 @@ r     -        500-900
       necessary to use a specific UID or GID). Alternatively, specify an absolute path
       in the file system. In this case, the UID/GID is read from the
       path's owner/group. This is useful to create users whose UID/GID
-      match the owners of pre-existing files (such as SUID or SGID
+      match the owners of preexisting files (such as SUID or SGID
       binaries).
       The syntaxes <literal><replaceable>uid</replaceable>:<replaceable>gid</replaceable></literal> and
       <literal><replaceable>uid</replaceable>:<replaceable>groupname</replaceable></literal> are supported to

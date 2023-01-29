@@ -1006,7 +1006,7 @@ _public_ PAM_EXTERN int pam_sm_close_session(
         if (debug)
                 pam_syslog(handle, LOG_DEBUG, "pam-systemd shutting down");
 
-        /* Only release session if it wasn't pre-existing when we
+        /* Only release session if it wasn't preexisting when we
          * tried to create it */
         r = pam_get_data(handle, "systemd.existing", &existing);
         if (!IN_SET(r, PAM_SUCCESS, PAM_NO_MODULE_DATA))

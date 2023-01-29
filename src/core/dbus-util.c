@@ -156,7 +156,7 @@ int bus_verify_manage_units_async_full(
                         error);
 }
 
-/* ret_format_str is an accumulator, so if it has any pre-existing content, new options will be appended to it */
+/* ret_format_str is an accumulator, so if it has any preexisting content, new options will be appended to it */
 int bus_read_mount_options(
                 sd_bus_message *message,
                 sd_bus_error *error,

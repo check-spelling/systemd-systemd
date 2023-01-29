@@ -1957,7 +1957,7 @@ static int oci_masked_paths(const char *name, JsonVariant *v, JsonDispatchFlags 
 
                 m->destination = TAKE_PTR(destination);
 
-                /* The spec doesn't say this, but apparently pre-existing implementations are lenient towards
+                /* The spec doesn't say this, but apparently preexisting implementations are lenient towards
                  * non-existing paths to mask. Let's hence be too. */
                 m->graceful = true;
         }

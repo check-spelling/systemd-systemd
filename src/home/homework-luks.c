@@ -576,7 +576,7 @@ static int luks_open(
 
         log_info("Discovered used LUKS device /dev/mapper/%s, and validated password.", setup->dm_name);
 
-        /* This is needed so that crypt_resize() can operate correctly for pre-existing LUKS devices. We need
+        /* This is needed so that crypt_resize() can operate correctly for preexisting LUKS devices. We need
          * to tell libcryptsetup the volume key explicitly, so that it is in the kernel keyring. */
         r = sym_crypt_activate_by_volume_key(setup->crypt_device, NULL, vk, vks, CRYPT_ACTIVATE_KEYRING_KEY);
         if (r < 0)

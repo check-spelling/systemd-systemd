@@ -353,7 +353,7 @@
         protected indirectly through the certificates measured into PCR 7. Validation through these
         certificates is typically preferable over validation through direct measurements as it is less
         brittle in context of OS/firmware updates: the measurements will change on every update, but code
-        signatures likely will validate against pre-existing certificates.</para></listitem>
+        signatures likely will validate against preexisting certificates.</para></listitem>
       </varlistentry>
 
       <varlistentry>

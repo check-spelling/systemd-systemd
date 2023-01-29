@@ -1971,7 +1971,7 @@ static EFI_STATUS boot_windows_bitlocker(void) {
         EFI_STATUS err;
 
         // FIXME: Experimental for now. Should be generalized, and become a per-entry option that can be
-        // enabled independently of BitLocker, and without a BootXXXX entry pre-existing.
+        // enabled independently of BitLocker, and without a BootXXXX entry preexisting.
 
         /* BitLocker key cannot be sealed without a TPM present. */
         if (!tpm_present())

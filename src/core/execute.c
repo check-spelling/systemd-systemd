@@ -2403,7 +2403,7 @@ static int setup_exec_directory(
                                  * it over. Most likely the service has been upgraded from one that didn't use
                                  * DynamicUser=1, to one that does. */
 
-                                log_info("Found pre-existing public %s= directory %s, migrating to %s.\n"
+                                log_info("Found preexisting public %s= directory %s, migrating to %s.\n"
                                          "Apparently, service previously had DynamicUser= turned off, and has now turned it on.",
                                          exec_directory_type_to_string(type), p, pp);
 
@@ -2472,7 +2472,7 @@ static int setup_exec_directory(
                                         /* Hmm, apparently DynamicUser= was once turned on for this service,
                                          * but is no longer. Let's move the directory back up. */
 
-                                        log_info("Found pre-existing private %s= directory %s, migrating to %s.\n"
+                                        log_info("Found preexisting private %s= directory %s, migrating to %s.\n"
                                                  "Apparently, service previously had DynamicUser= turned on, and has now turned it off.",
                                                  exec_directory_type_to_string(type), q, p);
 

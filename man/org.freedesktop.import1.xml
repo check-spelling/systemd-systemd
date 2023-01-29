@@ -161,7 +161,7 @@ node /org/freedesktop/import1 {
       subvolume below <filename>/var/lib/machines/</filename> under the specified name with no suffix
       appended. A raw import is placed as a file in <filename>/var/lib/machines/</filename> with the
       <filename>.raw</filename> suffix appended. If the <option>force</option> argument is true, any
-      pre-existing image with the same name is removed before starting the operation. Otherwise, the
+      preexisting image with the same name is removed before starting the operation. Otherwise, the
       operation fails if an image with the same name already exists. Finally, the
       <option>read_only</option> argument controls
       whether to create a writable or read-only image. Both methods return immediately after starting the import,
@@ -198,7 +198,7 @@ node /org/freedesktop/import1 {
       image and verifies any SHA256 hash value in that file against the image; <literal>signature</literal>
       does the same but also tries to authenticate the <filename>SHA256SUM</filename> file via
       <citerefentry project="man-pages"><refentrytitle>gpg</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-      first. The last argument indicates whether to replace a possibly pre-existing image with the same local
+      first. The last argument indicates whether to replace a possibly preexisting image with the same local
       name (if <literal>true</literal>), or whether to fail (if <literal>false</literal>). Like the import
       and export calls above, these calls return a pair of transfer identifier and object path for the ongoing
       download.</para>

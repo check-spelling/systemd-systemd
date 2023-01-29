@@ -215,10 +215,10 @@
         implicitly rounded up to multiples of 4096. When used with <option>--empty=create</option> this
         specifies the initial size of the loopback file to create.</para>
 
-        <para>The <option>--size=auto</option> option takes the sizes of pre-existing partitions into
+        <para>The <option>--size=auto</option> option takes the sizes of preexisting partitions into
         account. However, it does not accommodate for partition tables that are not tightly packed: the
         configured partitions might still not fit into the backing device if empty space exists between
-        pre-existing partitions (or before the first partition) that cannot be fully filled by partitions to
+        preexisting partitions (or before the first partition) that cannot be fully filled by partitions to
         grow or create.</para>
 
         <para>Also note that the automatic size determination does not take files or directories specified

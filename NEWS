@@ -2819,7 +2819,7 @@ CHANGES WITH 249:
           is acquired through a DHCP lease on this interface an explicit route
           to this address is created on this interface to ensure that NTP
           traffic to the NTP server acquired on an interface is also routed
-          through that interface. The pre-existing RoutesToDNS= setting that
+          through that interface. The preexisting RoutesToDNS= setting that
           implements the same for DNS servers is now enabled by default.
 
         * A pair of service settings SocketBindAllow= + SocketBindDeny= have
@@ -3192,7 +3192,7 @@ CHANGES WITH 248:
 
         * systemd-cryptsetup gained support for unlocking LUKS2 volumes using
           TPM2 hardware, as well as FIDO2 security tokens (in addition to the
-          pre-existing support for PKCS#11 security tokens).
+          preexisting support for PKCS#11 security tokens).
 
         * systemd-repart may enroll encrypted partitions using TPM2
           hardware. This may be useful for example to create an encrypted /var
@@ -3744,7 +3744,7 @@ CHANGES WITH 247:
 
         * sd-event.h gained a new call sd_event_add_time_relative() for
           installing timers relative to the current time. This is mostly a
-          convenience wrapper around the pre-existing sd_event_add_time() call
+          convenience wrapper around the preexisting sd_event_add_time() call
           which installs absolute timers.
 
         * sd-event event sources may now be placed in a new "exit-on-failure"
@@ -6963,7 +6963,7 @@ CHANGES WITH 239:
           for all its children). Note that turning this option on means setuid
           binaries and file system capabilities lose their special powers.
           While turning on this option is a big step towards a more secure
-          system, doing so is likely to break numerous pre-existing UNIX tools,
+          system, doing so is likely to break numerous preexisting UNIX tools,
           in particular su and sudo.
 
         * A new service systemd-time-sync-wait.service has been added. If
@@ -7187,7 +7187,7 @@ CHANGES WITH 239:
 
         * A new unit "system-update-pre.target" is added, which defines an
           optional synchronization point for offline system updates, as
-          implemented by the pre-existing "system-update.target" unit. It
+          implemented by the preexisting "system-update.target" unit. It
           allows ordering services before the service that executes the actual
           update process in a generic way.
 
@@ -7715,7 +7715,7 @@ CHANGES WITH 236:
           units. Besides validating the expression it will calculate the next
           time the specified expression would elapse.
 
-        * In addition to the pre-existing FailureAction= unit file setting
+        * In addition to the preexisting FailureAction= unit file setting
           there's now SuccessAction=, for configuring a shutdown action to
           execute when a unit completes successfully. This is useful in
           particular inside containers that shall terminate after some workload
@@ -7948,7 +7948,7 @@ CHANGES WITH 235:
         * ExecStart= lines in unit files gained two new modifiers: when a
           command line is prefixed with "!" the command will be executed as
           configured, except for the credentials applied by
-          setuid()/setgid()/setgroups(). It is very similar to the pre-existing
+          setuid()/setgid()/setgroups(). It is very similar to the preexisting
           "+", but does still apply namespacing options unlike "+". There's
           also "!!" now, which is mostly identical, but becomes a NOP on
           systems that support ambient capabilities. This is useful to write
@@ -11731,12 +11731,12 @@ CHANGES WITH 215:
           parsing of unknown mount options.
 
         * tmpfiles learnt a new "L+" directive which creates a symlink
-          but (unlike "L") deletes a pre-existing file first, should
+          but (unlike "L") deletes a preexisting file first, should
           it already exist and not already be the correct
           symlink. Similarly, "b+", "c+" and "p+" directives have been
           added as well, which create block and character devices, as
           well as fifos in the filesystem, possibly removing any
-          pre-existing files of different types.
+          preexisting files of different types.
 
         * For tmpfiles' "L", "L+", "C" and "C+" directives the final
           'argument' field (which so far specified the source to
@@ -13332,7 +13332,7 @@ CHANGES WITH 205:
         * Two new unit types have been introduced:
 
           Scope units are very similar to service units, however, are
-          created out of pre-existing processes — instead of PID 1
+          created out of preexisting processes — instead of PID 1
           forking off the processes. By using scope units it is
           possible for system services and applications to group their
           own child processes (worker processes) in a powerful way

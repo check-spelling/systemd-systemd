@@ -3358,7 +3358,7 @@ enum nl80211_attrs {
  * @NL80211_IFTYPE_STATION: managed BSS member
  * @NL80211_IFTYPE_AP: access point
  * @NL80211_IFTYPE_AP_VLAN: VLAN interface for access points; VLAN interfaces
- *	are a bit special in that they must always be tied to a pre-existing
+ *	are a bit special in that they must always be tied to a preexisting
  *	AP type interface.
  * @NL80211_IFTYPE_WDS: wireless distribution interface
  * @NL80211_IFTYPE_MONITOR: monitor interface receiving all frames
