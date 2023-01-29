@@ -64,7 +64,7 @@ available functionality:
     daily.
 
 12. Our tree includes `.editorconfig`, `.dir-locals.el` and `.vimrc` files, to
-    ensure that editors follow the right indentiation styles automatically.
+    ensure that editors follow the right indentation styles automatically.
 
 13. When building systemd from a git checkout the build scripts will
     automatically enable a git commit hook that ensures whitespace cleanliness.
