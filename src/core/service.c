@@ -1604,7 +1604,7 @@ static int service_spawn_internal(
                 /* If this is a per-connection service instance, let's set $REMOTE_ADDR and $REMOTE_PORT to something
                  * useful. Note that we do this only when we are still connected at this point in time, which we might
                  * very well not be. Hence we ignore all errors when retrieving peer information (as that might result
-                 * in ENOTCONN), and just use whate we can use. */
+                 * in ENOTCONN), and just use what we can use. */
 
                 if (getpeername(s->socket_fd, &sa.sa, &salen) >= 0 &&
                     IN_SET(sa.sa.sa_family, AF_INET, AF_INET6, AF_VSOCK)) {
