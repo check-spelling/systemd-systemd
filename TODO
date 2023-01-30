@@ -1338,7 +1338,7 @@ Features:
   to 1K implicitly, unless explicitly opted-out.
 
 * rework seccomp/nnp logic that even if User= is used in combination with
-  a seccomp option we don't have to set NNP. For that, change uid first whil
+  a seccomp option we don't have to set NNP. For that, change uid first while
   keeping CAP_SYS_ADMIN, then apply seccomp, the drop cap.
 
 * when no locale is configured, default to UEFI's PlatformLang variable
